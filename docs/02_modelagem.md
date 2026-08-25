@@ -112,7 +112,7 @@ A entidade `itens_compra` representa a relação entre pedidos e produtos, permi
 
 ## 6. Diagrama
 
-![Diagrama Entidade-Relacionamento](../diagrams/diagrama_novamarket.png)  
+![Diagrama Entidade-Relacionamento](../diagrama/diagrama_nova_market.png)  
 
 ---
 
