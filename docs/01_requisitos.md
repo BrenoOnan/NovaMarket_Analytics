@@ -2,7 +2,7 @@
 
 ## Contexto da empresa 📚
 
-A NovaMarket é uma empresa de e-commerce que iniciou suas atividades a 5 anos, Com o aumento vertiginoso de vendas nos últimos 5 anos, a NovaMarket começou a vender produtos sem estoque real, atrasar entregas e perder clientes antigos por falta de um histórico de compras centralizado.. Difuculdades na organização dos dados, controle de estoque, e principalmente metodos CRM para retençao de fidelização do cliente.
+A NovaMarket é uma empresa de e-commerce que iniciou suas atividades há 5 anos, Com o aumento vertiginoso de vendas nos últimos 5 anos, a NovaMarket começou a vender produtos sem estoque real, atrasar entregas e perder clientes antigos por falta de um histórico de compras centralizado.. Difuculdades na organização dos dados, controle de estoque, e principalmente metodos CRM para retençao de fidelização do cliente.
 Para sustentar o próximo nível de expansão a NovaMarket reestrutura sua arquitetura utilizando SQL como modelo de banco de dados estruturado, e a nova estrutura garante integridade operacional no controle de pedidos e estoque, enquanto fornece uma base sólida de dados para impulsionar estratégias de CRM, permitindo segmentar clientes, identificar padrões de compra e implementar programas de fidelização personalizados.
 
 ## Objetivo do projeto 🚀
@@ -54,21 +54,13 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
 
  * Identificador único do cliente;
  * Nome;
+ * Sobre Nome;
  * E-mail;
- * Data de cadastro;
  * Cidade;
  * Estado;
  * Região.
 
-- RD02 — Dados de localização
- * Identificador da cidade;
- * Nome da cidade;
- * Identificador do estado;
- * Nome do estado;
- * Sigla do estado;
- * Região do país.
-
-- RD03 — Dados de produtos
+- RD02 — Dados de produtos
  * Identificador único do produto;
  * Nome do produto;
  * Categoria;
@@ -76,15 +68,11 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Custo do produto;
  * Status do produto.
 
-- RD04 — Dados de categorias
- * Identificador da categoria;
- * Nome da categoria;
- * Descrição da categoria.
 
 - RD05 — Dados de vendedores
  * Identificador único;
  * Nome;
- * Data de admissão;
+ * Sobre Nome;
  * Status.
 
 - RD06 — Dados de pedidos
@@ -93,6 +81,7 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Vendedor;
  * Data do pedido;
  * Status do pedido;
+ * Pagamento
  * Valor total do pedido.
 
 - RD07 — Dados dos itens dos pedidos
@@ -100,16 +89,8 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Pedido relacionado;
  * Produto relacionado;
  * Quantidade;
- * Preço unitário;
+ * Preço total;
  * Desconto aplicado.
-
-- RD08 — Dados de pagamentos
- * Identificador do pagamento;
- * Pedido relacionado;
- * Forma de pagamento;
- * Valor pago;
- * Status do pagamento;
- * Data do pagamento.
 
 - RD09 — Dados históricos de compras
  * Primeira compra;
@@ -117,15 +98,8 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Quantidade de compras;
  * Frequência de compras;
  * Valor total gasto;
+ * Status
  * Valor médio das compras.
-
-- RD10 — Dados necessários para análise de churn
- * Data da última compra;
- * Data da primeira compra;
- * Quantidade de pedidos;
- * Frequência de compra;
- * Valor total gasto;
- * Período desde a última compra.
 
 ## Regras de negócio 🤝
 
@@ -140,13 +114,11 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
   - RN06 — Pedido deve possuir itens
   - RN07 — Pedido deve possuir vendedor
   - RN08 — Status do pedido
-  - RN09 — Validação do pedido possuir tudo acima
-  - RN09.1
-  diferencial - pedidos cancelado não apaga
+  - RN09 — Forma de pagamento
+  - RN10 - Pedidos cancelado irá para
   status = CANCELADO
 
 ### 3. Regras de produtos
-  - RN10 — Produto deve pertencer a uma categoria
   - RN11 — Produto deve possuir preço
   - RN12 — Produto deve possuir custo registrado
   - RN13 — Tipos de desconto
