@@ -1,0 +1,17 @@
+services:
+
+  mysql:
+    image: mysql:8.0 # criação da imagem, modelo pronto sql
+
+    ports:
+      - "3306:3306"
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root      # SENHA ROOT
+      MYSQL_DATABASE: novamarket     # CRIE O BANCO DE DADOS
+
+    volumes:
+      - mysql_data:/var/lib/mysql  # local persistente onde os dados do MySQL são armazenados.
+
+volumes:
+  mysql_data:
