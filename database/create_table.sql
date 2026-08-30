@@ -52,3 +52,21 @@ CREATE TABLE novamarket.purchase_history (
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_0900_ai_ci;
+
+
+# Criando a tabela pedidos
+CREATE TABLE novamarket.orders (
+	order_id INT AUTO_INCREMENT NOT NULL,
+	client_id INT NOT NULL,
+	seller_id INT NOT NULL,
+	order_date DATE DEFAULT (CURRENT_DATE) NOT NULL,
+	total_amount DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+	payment_method ENUM('credito', 'debito', 'pix') NOT NULL,
+	status ENUM('PENDENTE', 'CONCLUIDO', 'CANCELADO') NOT NULL DEFAULT 'PENDENTE',
+	CONSTRAINT orders_pk PRIMARY KEY (order_id),
+	CONSTRAINT orders_clients_fk FOREIGN KEY (client_id) REFERENCES novamarket.clients(client_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	CONSTRAINT orders_sellers_fk FOREIGN KEY (seller_id) REFERENCES novamarket.sellers(seller_id) ON DELETE RESTRICT ON UPDATE CASCADE
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_0900_ai_ci;
