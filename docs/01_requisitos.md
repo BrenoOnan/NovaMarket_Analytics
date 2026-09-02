@@ -66,7 +66,6 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Categoria;
  * Preço de venda;
  * Custo do produto;
- * Status do produto.
 
 
 - RD05 — Dados de vendedores
@@ -74,29 +73,31 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
  * Nome;
  * Sobre Nome;
  * Status.
+ * Salário.
 
 - RD06 — Dados de pedidos
  * Identificador único do pedido;
- * Cliente;
- * Vendedor;
+ * Cliente ID;
+ * Vendedor ID;
  * Data do pedido;
  * Status do pedido;
- * Pagamento
+ * Forma de Pagamento.
  * Valor total do pedido.
 
 - RD07 — Dados dos itens dos pedidos
  * Identificador do item;
- * Pedido relacionado;
- * Produto relacionado;
- * Quantidade;
- * Preço total;
+ * Pedido relacionado ID;
+ * Produto relacionado ID;
+ * Preço unitário.
+ * Quantidade.
+ * Preço total.
  * Desconto aplicado.
 
 - RD09 — Dados históricos de compras
+ * ID cliente ;
  * Primeira compra;
  * Última compra;
  * Quantidade de compras;
- * Frequência de compras;
  * Valor total gasto;
  * Status
  * Valor médio das compras.
@@ -121,7 +122,6 @@ Triplicar o faturamento nos próximos 5 anos, elevando a taxa de retenção de c
 ### 3. Regras de produtos
   - RN11 — Produto deve possuir preço
   - RN12 — Produto deve possuir custo registrado
-  - RN13 — Tipos de desconto
 
 ### 4. Fidelicação - Régua comunicação 
   - RN14 - Novo cliente

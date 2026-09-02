@@ -24,54 +24,54 @@ O modelo inicial é composto pelas seguintes entidades:
 ## 3. Principais atributos
 
 ### Clientes
-- `cliente_id` — PK
-- `nome`
-- `sobre_nome`
-- `email`
-- `estado`
-- `cidade`
-- `região`
+- `client_id` — PK
+- `name`- VAR
+- `last_name` - VAR
+- `email` - VAR
+- `estate` - VAR
+- `city` - VAR
+- `region` - VAR
 
 ### Histórico de Compra
-- `id_cliente` — PK, FK
-- `primeira_compra`
-- `ultima_compra`
-- `quantidade_compra`
-- `frequencia_compra`
-- `valor_total`
-- `gasto_medio`
-- `status`
+- `cliente_id_history` — PK, FK
+- `first_purchase` - DATE
+- `last_purchase` - DATE
+- `total_orders` - INT
+- `total_spent` - INT
+- `crm_status` - ENUM
+- `avg_order_value` - DEC
 
 ### Pedidos
-- `pedido_id` — PK
+- `order_id` — PK
 - `cliente_id` — FK
-- `vendedor_id` — FK
-- `data`
-- `valor_total`
-- `pagamento`
-- `status`
+- `seller_id` — FK
+- `date_order` - DATE
+- `total_price` - DEC
+- `pay_method` - ENUM
+- `status`- ENUM
 
 ### Itens de Compra
-- `itens_id` — PK
-- `pedido_id` — FK
-- `produto_id` — FK
-- `quantidade`
-- `preco_total`
-- `desconto`
+- `item_id` — PK
+- `order_id` — FK
+- `product_id` — FK
+- `price_unit`- DEC
+- `amount`- INT
+- `discount` - DEC
+- `total_price` DEC
 
 ### Produtos
-- `produto_id` — PK
-- `status`
-- `custo`
-- `preço`
-- `categoria`
-- `nome`
+- `produtc_id` — PK
+- `name`- VAR
+- `cost`- DEC
+- `price`- DEC
+- `category`- VAR
 
 ### Vendedores
-- `vendedor_id` — PK
-- `nome`
-- `sobre_nome`
-- `status`
+- `seller_id` — PK
+- `first_name`- VAR
+- `last_name` - VAR
+- `status` - ENUM
+- `salary` - DEC
 
 ---
 
