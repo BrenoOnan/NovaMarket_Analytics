@@ -1,0 +1,61 @@
+"client_id","name","last_name","email","state","city","region"
+6,João ,Pedro,joao@email.com,SP,São Paulo,Norte
+7,Maria ,Clara,maria@email.com,RJ,Rio de Janeiro,Oeste
+8,Lucas ,Santos,lucas@email.com,MG,Minas Gerais,Sul
+9,Fernanda ,Lima,fernanda@email.com,PR,Paraná,Leste
+10,Ricardo ,Oliveira,ricar_oli@email.com,SC,Santa Catarina,Sul
+11,Arnaldo ,Vieira,arnaldo@email.com,SC,Santa Catarina,Oeste
+12,Pedro ,Costa,pedro_costa@email.com,SC,Santa Catarina,Norte
+13,Claudio ,Bandeira,bandeiras@email.com,BA,Bahia,Sul
+14,Pedro ,Caprio,Caprio_pedro@email.com,SP,São Paulo,Norte
+15,Roberto,Barros,Roberto.barros@gmail.com,SP,São Paulo,SUL
+16,Monique,Pereira,monique.pereira16@email.com,SP,São Paulo,Norte
+17,Fabio,Fernandes,fabio.fernandes17@email.com,PR,Curitiba,Leste
+18,Rodrigo,Lima,rodrigo.lima18@email.com,RJ,Rio de Janeiro,Oeste
+19,Flavio,Teixeira,flavio.teixeira19@email.com,SP,Santos,Norte
+20,Igor,Machado,igor.machado20@email.com,SP,Campinas,Norte
+21,Juliana,Ferreira,juliana.ferreira21@email.com,MG,Uberlândia,Sul
+22,Rodrigo,Gonçalves,rodrigo.gonçalves22@email.com,SP,São Paulo,Norte
+23,Vitor,Martins,vitor.martins23@email.com,BA,Salvador,Sul
+24,Rodrigo,Mendes,rodrigo.mendes24@email.com,PR,Londrina,Leste
+25,Gabriel,Costa,gabriel.costa25@email.com,BA,Salvador,Sul
+26,Gustavo,Fernandes,gustavo.fernandes26@email.com,RJ,Niterói,Oeste
+27,Mariana,Dias,mariana.dias27@email.com,RJ,Rio de Janeiro,Oeste
+28,Larissa,Moreira,larissa.moreira28@email.com,RJ,Rio de Janeiro,Oeste
+29,Vanessa,Nascimento,vanessa.nascimento29@email.com,PR,Londrina,Leste
+30,Matheus,Freitas,matheus.freitas30@email.com,RJ,Rio de Janeiro,Oeste
+31,Renata,Ferreira,renata.ferreira31@email.com,SC,Florianópolis,Sul
+32,Monique,Moraes,monique.moraes32@email.com,RS,Porto Alegre,Sul
+33,Tatiane,Martins,tatiane.martins33@email.com,SP,Santos,Norte
+34,Matheus,Almeida,matheus.almeida34@email.com,SC,Florianópolis,Sul
+35,Larissa,Almeida,larissa.almeida35@email.com,RJ,Rio de Janeiro,Oeste
+36,Renata,Fernandes,renata.fernandes36@email.com,PE,Recife,Leste
+37,Monique,Andrade,monique.andrade37@email.com,MG,Belo Horizonte,Sul
+38,Marcelo,Nascimento,marcelo.nascimento38@email.com,MG,Uberlândia,Sul
+39,Luana,Fernandes,luana.fernandes39@email.com,SP,Santos,Norte
+40,Bia,Costa,bia.costa40@email.com,PR,Curitiba,Leste
+41,Thiago,Freitas,thiago.freitas41@email.com,RS,Caxias do Sul,Sul
+42,Carla,Castro,carla.castro42@email.com,PR,Curitiba,Leste
+43,Flavio,Rocha,flavio.rocha43@email.com,SP,Campinas,Norte
+44,Rodrigo,Oliveira,rodrigo.oliveira44@email.com,SC,Joinville,Sul
+45,Leonardo,Fernandes,leonardo.fernandes45@email.com,SP,Santos,Norte
+46,Mariana,Vargas,mariana.vargas46@email.com,SC,Joinville,Sul
+47,Mariana,Ramos,mariana.ramos47@email.com,RS,Caxias do Sul,Sul
+48,Adriano,Freitas,adriano.freitas48@email.com,RJ,Niterói,Oeste
+49,Guilherme,Lima,guilherme.lima49@email.com,PR,Curitiba,Leste
+50,Fabio,Castro,fabio.castro50@email.com,PR,Londrina,Leste
+51,Fabio,Melo,fabio.melo51@email.com,BA,Salvador,Sul
+52,Igor,Nunes,igor.nunes52@email.com,RS,Porto Alegre,Sul
+53,Rodrigo,Lima,rodrigo.lima53@email.com,GO,Goiânia,Oeste
+54,Caio,Ferreira,caio.ferreira54@email.com,SP,Campinas,Norte
+55,Amanda,Gomes,amanda.gomes55@email.com,MG,Belo Horizonte,Sul
+56,Flavio,Machado,flavio.machado56@email.com,SP,Santos,Norte
+57,Renata,Moreira,renata.moreira57@email.com,PE,Recife,Leste
+58,Renan,Soares,renan.soares58@email.com,SP,São Paulo,Norte
+59,Flavio,Pereira,flavio.pereira59@email.com,PR,Londrina,Leste
+60,Thiago,Dias,thiago.dias60@email.com,RJ,Rio de Janeiro,Oeste
+61,Eduardo,Machado,eduardo.machado61@email.com,MG,Belo Horizonte,Sul
+62,Andre,Silva,andre.silva62@email.com,PR,Londrina,Leste
+63,Natalia,Ribeiro,natalia.ribeiro63@email.com,GO,Goiânia,Oeste
+64,Bruno,Barbosa,bruno.barbosa64@email.com,GO,Goiânia,Oeste
+65,Bia,Martins,bia.martins65@email.com,RJ,Niterói,Oeste
